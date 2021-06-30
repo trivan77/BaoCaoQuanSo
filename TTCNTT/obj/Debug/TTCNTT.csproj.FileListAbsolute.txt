@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\TTCNTT\TTCNTT\bin\Debug\TTCNTT.exe.config
+C:\Users\User\source\repos\TTCNTT\TTCNTT\bin\Debug\TTCNTT.exe
+C:\Users\User\source\repos\TTCNTT\TTCNTT\bin\Debug\TTCNTT.pdb
+C:\Users\User\source\repos\TTCNTT\TTCNTT\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\User\source\repos\TTCNTT\TTCNTT\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\User\source\repos\TTCNTT\TTCNTT\obj\Debug\TTCNTT.csprojAssemblyReference.cache
+C:\Users\User\source\repos\TTCNTT\TTCNTT\obj\Debug\TTCNTT.frmChinh.resources
+C:\Users\User\source\repos\TTCNTT\TTCNTT\obj\Debug\TTCNTT.frmDangNhap.resources
+C:\Users\User\source\repos\TTCNTT\TTCNTT\obj\Debug\TTCNTT.Properties.Resources.resources
+C:\Users\User\source\repos\TTCNTT\TTCNTT\obj\Debug\TTCNTT.csproj.GenerateResource.cache
+C:\Users\User\source\repos\TTCNTT\TTCNTT\obj\Debug\TTCNTT.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\TTCNTT\TTCNTT\obj\Debug\TTCNTT.csproj.CopyComplete
+C:\Users\User\source\repos\TTCNTT\TTCNTT\obj\Debug\TTCNTT.exe
+C:\Users\User\source\repos\TTCNTT\TTCNTT\obj\Debug\TTCNTT.pdb
