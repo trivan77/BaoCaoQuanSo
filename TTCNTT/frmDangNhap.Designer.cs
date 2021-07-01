@@ -30,17 +30,17 @@ namespace TTCNTT
           private void InitializeComponent()
           {
                this.panel1 = new System.Windows.Forms.Panel();
-               this.label1 = new System.Windows.Forms.Label();
-               this.label2 = new System.Windows.Forms.Label();
                this.pictureBox1 = new System.Windows.Forms.PictureBox();
+               this.label2 = new System.Windows.Forms.Label();
+               this.label1 = new System.Windows.Forms.Label();
                this.panel2 = new System.Windows.Forms.Panel();
                this.panel3 = new System.Windows.Forms.Panel();
                this.pictureBox2 = new System.Windows.Forms.PictureBox();
                this.pictureBox3 = new System.Windows.Forms.PictureBox();
-               this.textBox1 = new System.Windows.Forms.TextBox();
-               this.textBox2 = new System.Windows.Forms.TextBox();
-               this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
-               this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
+               this.txtMaDonVi = new System.Windows.Forms.TextBox();
+               this.txtMatKhau = new System.Windows.Forms.TextBox();
+               this.btnDangNhap = new DevComponents.DotNetBar.ButtonX();
+               this.btnThoat = new DevComponents.DotNetBar.ButtonX();
                this.panel1.SuspendLayout();
                ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
                ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -59,15 +59,13 @@ namespace TTCNTT
                this.panel1.Size = new System.Drawing.Size(473, 87);
                this.panel1.TabIndex = 0;
                // 
-               // label1
+               // pictureBox1
                // 
-               this.label1.AutoSize = true;
-               this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-               this.label1.Location = new System.Drawing.Point(215, 44);
-               this.label1.Name = "label1";
-               this.label1.Size = new System.Drawing.Size(0, 25);
-               this.label1.TabIndex = 0;
+               this.pictureBox1.Location = new System.Drawing.Point(12, 5);
+               this.pictureBox1.Name = "pictureBox1";
+               this.pictureBox1.Size = new System.Drawing.Size(82, 75);
+               this.pictureBox1.TabIndex = 2;
+               this.pictureBox1.TabStop = false;
                // 
                // label2
                // 
@@ -80,13 +78,15 @@ namespace TTCNTT
                this.label2.TabIndex = 1;
                this.label2.Text = "Phần Mềm Báo Cáo Quân Số";
                // 
-               // pictureBox1
+               // label1
                // 
-               this.pictureBox1.Location = new System.Drawing.Point(12, 5);
-               this.pictureBox1.Name = "pictureBox1";
-               this.pictureBox1.Size = new System.Drawing.Size(82, 75);
-               this.pictureBox1.TabIndex = 2;
-               this.pictureBox1.TabStop = false;
+               this.label1.AutoSize = true;
+               this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+               this.label1.Location = new System.Drawing.Point(215, 44);
+               this.label1.Name = "label1";
+               this.label1.Size = new System.Drawing.Size(0, 25);
+               this.label1.TabIndex = 0;
                // 
                // panel2
                // 
@@ -120,75 +120,75 @@ namespace TTCNTT
                this.pictureBox3.TabIndex = 6;
                this.pictureBox3.TabStop = false;
                // 
-               // textBox1
+               // txtMaDonVi
                // 
-               this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-               this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
-               this.textBox1.Location = new System.Drawing.Point(75, 124);
-               this.textBox1.Multiline = true;
-               this.textBox1.Name = "textBox1";
-               this.textBox1.Size = new System.Drawing.Size(228, 23);
-               this.textBox1.TabIndex = 7;
-               this.textBox1.Text = "Mã Đơn Vị";
+               this.txtMaDonVi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+               this.txtMaDonVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.txtMaDonVi.ForeColor = System.Drawing.SystemColors.ControlDark;
+               this.txtMaDonVi.Location = new System.Drawing.Point(75, 124);
+               this.txtMaDonVi.Multiline = true;
+               this.txtMaDonVi.Name = "txtMaDonVi";
+               this.txtMaDonVi.Size = new System.Drawing.Size(228, 23);
+               this.txtMaDonVi.TabIndex = 7;
+               this.txtMaDonVi.Text = "Mã Đơn Vị";
                // 
-               // textBox2
+               // txtMatKhau
                // 
-               this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-               this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.textBox2.ForeColor = System.Drawing.SystemColors.ControlDark;
-               this.textBox2.Location = new System.Drawing.Point(75, 188);
-               this.textBox2.Multiline = true;
-               this.textBox2.Name = "textBox2";
-               this.textBox2.Size = new System.Drawing.Size(228, 23);
-               this.textBox2.TabIndex = 8;
-               this.textBox2.Text = "Mật Khẩu";
+               this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
+               this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.txtMatKhau.ForeColor = System.Drawing.SystemColors.ControlDark;
+               this.txtMatKhau.Location = new System.Drawing.Point(75, 188);
+               this.txtMatKhau.Multiline = true;
+               this.txtMatKhau.Name = "txtMatKhau";
+               this.txtMatKhau.Size = new System.Drawing.Size(228, 23);
+               this.txtMatKhau.TabIndex = 8;
+               this.txtMatKhau.Text = "Mật Khẩu";
                // 
-               // buttonX1
+               // btnDangNhap
                // 
-               this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-               this.buttonX1.BackColor = System.Drawing.Color.CadetBlue;
-               this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
-               this.buttonX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.buttonX1.Location = new System.Drawing.Point(359, 117);
-               this.buttonX1.Name = "buttonX1";
-               this.buttonX1.Size = new System.Drawing.Size(75, 33);
-               this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-               this.buttonX1.TabIndex = 9;
-               this.buttonX1.Text = "Đăng Nhập";
-               this.buttonX1.TextColor = System.Drawing.Color.White;
+               this.btnDangNhap.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+               this.btnDangNhap.BackColor = System.Drawing.Color.CadetBlue;
+               this.btnDangNhap.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
+               this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.btnDangNhap.Location = new System.Drawing.Point(359, 117);
+               this.btnDangNhap.Name = "btnDangNhap";
+               this.btnDangNhap.Size = new System.Drawing.Size(75, 33);
+               this.btnDangNhap.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+               this.btnDangNhap.TabIndex = 9;
+               this.btnDangNhap.Text = "Đăng Nhập";
+               this.btnDangNhap.TextColor = System.Drawing.Color.White;
                // 
-               // buttonX2
+               // btnThoat
                // 
-               this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-               this.buttonX2.BackColor = System.Drawing.Color.CadetBlue;
-               this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
-               this.buttonX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.buttonX2.Location = new System.Drawing.Point(359, 181);
-               this.buttonX2.Name = "buttonX2";
-               this.buttonX2.Size = new System.Drawing.Size(75, 33);
-               this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-               this.buttonX2.TabIndex = 10;
-               this.buttonX2.Text = "Thoát";
-               this.buttonX2.TextColor = System.Drawing.Color.White;
+               this.btnThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+               this.btnThoat.BackColor = System.Drawing.Color.CadetBlue;
+               this.btnThoat.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
+               this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.btnThoat.Location = new System.Drawing.Point(359, 181);
+               this.btnThoat.Name = "btnThoat";
+               this.btnThoat.Size = new System.Drawing.Size(75, 33);
+               this.btnThoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+               this.btnThoat.TabIndex = 10;
+               this.btnThoat.Text = "Thoát";
+               this.btnThoat.TextColor = System.Drawing.Color.White;
                // 
-               // Form1
+               // frmDangNhap
                // 
                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
                this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
                this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
                this.ClientSize = new System.Drawing.Size(473, 266);
-               this.Controls.Add(this.buttonX2);
-               this.Controls.Add(this.buttonX1);
-               this.Controls.Add(this.textBox2);
-               this.Controls.Add(this.textBox1);
+               this.Controls.Add(this.btnThoat);
+               this.Controls.Add(this.btnDangNhap);
+               this.Controls.Add(this.txtMatKhau);
+               this.Controls.Add(this.txtMaDonVi);
                this.Controls.Add(this.pictureBox3);
                this.Controls.Add(this.pictureBox2);
                this.Controls.Add(this.panel3);
                this.Controls.Add(this.panel2);
                this.Controls.Add(this.panel1);
                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-               this.Name = "Form1";
+               this.Name = "frmDangNhap";
                this.Text = "Form1";
                this.panel1.ResumeLayout(false);
                this.panel1.PerformLayout();
@@ -210,10 +210,10 @@ namespace TTCNTT
           private System.Windows.Forms.Panel panel3;
           private System.Windows.Forms.PictureBox pictureBox2;
           private System.Windows.Forms.PictureBox pictureBox3;
-          private System.Windows.Forms.TextBox textBox1;
-          private System.Windows.Forms.TextBox textBox2;
-          private DevComponents.DotNetBar.ButtonX buttonX1;
-          private DevComponents.DotNetBar.ButtonX buttonX2;
+          private System.Windows.Forms.TextBox txtMaDonVi;
+          private System.Windows.Forms.TextBox txtMatKhau;
+          private DevComponents.DotNetBar.ButtonX btnDangNhap;
+          private DevComponents.DotNetBar.ButtonX btnThoat;
      }
 }
 
